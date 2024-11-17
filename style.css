@@ -1,0 +1,23 @@
+button {
+    margin-top: 10px;
+}
+
+.h6 {
+    margin: 20px 0;
+}
+
+.card {
+    margin: 30px auto;
+    width: 980px;
+    padding: 0px 20px 20px 20px;
+}
+
+.instructions {
+    margin: 0 15px 15px 15px;
+    padding-left: 30px;
+    border-left: 4px solid #CCC;
+}
+
+.instructions p {
+    margin-bottom: 2px;
+}

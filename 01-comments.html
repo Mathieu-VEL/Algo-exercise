@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exo d'Algo - Comments !</title>
+    <link href="./bootstrap.min.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
+</head>
+<body>
+<a href="index.html">← revenir à la liste des exos</a>
+<div class="card">
+    <p class="h6 font-weight-bold text-center">#01 - Ajouter des commentaires</p>
+    <div class="instructions">
+        <p class="text-secondary">Votre mission si toutefois vous l'acceptez, est de commenter le code javascript en bas de page !</p>
+    </div>
+    <br/>
+    <label>Nom et Prénom</label>
+    <br/>
+    <input type="text" id="firstname" placeholder="Prénom"/>
+    <input type="text" id="lastname" placeholder="Nom"/>
+    <button type="button" class="btn btn-primary" onclick="displayMessage()">
+        Afficher le message
+    </button>
+</div>
+
+<script type="text/javascript">
+    function displayMessage() {
+        let firstname = document.getElementById("firstname").value;
+        let lastname = document.getElementById("lastname").value;
+        let fullname = firstname + " " + lastname.toUpperCase();
+        let message = "Bonjour " + fullname;
+
+        alert(message)
+    }
+</script>
+</body>
+</html>
