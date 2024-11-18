@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exo d'Algo - Adult !</title>
+    <link href="./bootstrap.min.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
+</head>
+<body>
+<a href="index.html">← revenir à la liste des exos</a>
+<div class="card">
+    <!--Instructions-->
+    <p class="h6 font-weight-bold text-center">#04 - Afficher le message correspondant</p>
+    <div class="instructions">
+        <p class="text-secondary">Votre mission si toutefois vous l'acceptez, est de vérifier l'âge de l'utilisateur :</p>
+        <br />
+        <p class="text-secondary">Pour une personne majeur</p>
+        <p class="text-success">J'affiche  "Bienvenue sur le site"</p>
+        <p class="text-secondary">Sinon</p>
+        <p class="text-danger">J'affiche  "Vous devez être majeur pour accèder au site !"</p>
+    </div>
+    <br/>
+
+    <!--Formulaire-->
+    <label>Renseignez votre âge</label>
+    <br/>
+    <input type="text" id="age" />
+    <button type="button" class="btn btn-primary" onclick="verifyAge()">
+        Entrer sur le site
+    </button>
+</div>
+
+<script type="text/javascript">
+    function verifyAge() {
+        let age = document.getElementById("age").value;
+
+        // CODE HERE !
+    }
+</script>
+</body>
+</html>

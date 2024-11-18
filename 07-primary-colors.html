@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exo d'Algo - Primary colors !</title>
+    <link href="./bootstrap.min.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
+</head>
+<body>
+<a href="index.html">← revenir à la liste des exos</a>
+<div class="card">
+    <!--Instructions-->
+    <p class="h6 font-weight-bold text-center">#09 - Décomposition d'une couleur</p>
+    <div class="instructions">
+        <p class="text-secondary">Votre mission si toutefois vous l'acceptez, est d'afficher les couleurs primaires associées à la couleur secondaire sélectionnée</p>
+        <br />
+        <p class="text-primary"><b>Violet</b> retournera le message : "Le violet est composé de bleu et de rouge"</p>
+    </div>
+
+    <br/>
+    <!--Formulaire-->
+    <select name="color" id="colors">
+        <option value="">--Choisissez une couleur--</option>
+        <option value="green">Vert</option>
+        <option value="purple">Violet</option>
+        <option value="orange">Orange</option>
+    </select>
+    <button type="button" class="btn btn-primary" onclick="primaryColors()">
+        Découvrir la composition
+    </button>
+</div>
+
+<script type="text/javascript">
+    function primaryColors() {
+        let colors = document.getElementById("colors");
+        let secondaryColor = colors.options[colors.selectedIndex].value;
+
+        // CODE HERE !
+    }
+</script>
+</body>
+</html>
