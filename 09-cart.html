@@ -38,12 +38,47 @@
 
 <script type="text/javascript">
     const VALID_PROMOTION_CODE = "10POUR100";
-
     function cartValue() {
+
+        
         let articles = document.getElementById("articles");
         let selectedArticle = articles.options[articles.selectedIndex].value;
+        let promotion = document.getElementById("promotion").value;
+        let price;
 
         // CODE HERE !
+
+        if (selectedArticle === "one"){
+            price = 30;
+        }
+        else{
+                price = 50;
+            }
+
+        if (promotion === VALID_PROMOTION_CODE){
+            price = price - (price * 0.1);
+        }
+
+        alert("La valeur de votre panier est de "  + price)
+
+
+
+        // if (promotion === VALID_PROMOTION_CODE && selectedArticle === "one"){
+        //     alert("la valeur de votre panier est de 27$");
+        // }
+        // else if (promotion === VALID_PROMOTION_CODE && selectedArticle === "two"){
+        //     alert("la valeur de votre panier est de 45$");
+        // }
+        // else if (selectedArticle === "one"){
+        //     alert("la valeur de votre panier est de 30$");
+        // }
+        // else if (selectedArticle === "two"){
+        //     alert("la valeur de votre panier est de 50$");
+        // }
+        // else {
+        //     alert("pas disponible");
+        // }
+
     }
 </script>
 </body>
